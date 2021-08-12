@@ -29,11 +29,11 @@ public class MyAmazingBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "myamazingbot";
+        return "perepelytsia_java_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "123456789:qwertyuioplkjhgfdsazxcvbnm";
+        return "1935843010:AAGEbpJk2EqJeOrDBGgnmPSQVV47k04y3hw";
     }
 }
