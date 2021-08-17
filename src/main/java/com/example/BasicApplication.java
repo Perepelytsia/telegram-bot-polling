@@ -1,5 +1,6 @@
 package com.example;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
@@ -11,6 +12,7 @@ public class BasicApplication {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             botsApi.registerBot(new MyAmazingBot());
+            SpringApplication.run(BasicApplication.class, args);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
